@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css"
+    <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    
+
     <title></title>
 </head>
 <body>
@@ -21,13 +24,17 @@
            
     <h4>Información personal:</h4> 
 
+    <form action="#" id="datos">
      <p>Nombre:</p>
-     <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre ">
-     <p>Apellido:</p>
-     <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido ">
-     <p>Edad:</p>
-     <input class="controls-edad" type="int" name="edad" id="edad" placeholder="Ingrese su edad">
- 
+        <input class="controls" type="text" name="nombres" id="names" placeholder="Ingrese su nombre ">
+        <span class="error">El campo es nombre es obligatorio</span><br>       
+        <p>Apellido:</p>
+        <input class="controls" type="text" name="apellidos" id="names" placeholder="Ingrese su apellido ">
+        <span class="error">El campo es apellido es obligatorio</span><br>       
+        <p>Edad:</p>
+        <input class="controls-edad" type="text" name="edad" id="edad" placeholder="Ingrese su edad">
+     </form>
+     
         <h5>
      <p><input class="genre" type="checkbox" id="genre1" value="Masculino">
      <label for="genre1">Masculino</label></p>
@@ -42,7 +49,15 @@
     <p>Empresa:</p>
      <input class="controls" type="text" name="empresa" id="empresas" placeholder="Ingrese el nombre de su empresa">
 
-     <input class="buttons" type="submit" value="Submit">
+     <input class="buttons" type="submit" id="button" value="Submit">
+
+     <input class="buttons-clean" type="submit" id="button2" value="Limpiar">
 </section>
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="App.js"></script>
+    <script src="Blanco.js"></script>
+
+
 </body>
 </html>
